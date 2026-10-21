@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo Hub — Artan Lumi</title>
+  <meta name="description" content="Portfolio e demove të dixhitalizimit — hap në takim." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #14212b;
+      --muted: #5a6a76;
+      --paper: #f7f4ef;
+      --card: #ffffff;
+      --line: #e2ddd4;
+      --accent: #0c4a6e;
+      --accent-2: #b45309;
+      --ok: #166534;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #dbeafe 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #ffedd5 0%, transparent 50%),
+        var(--paper);
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    header {
+      margin-bottom: 2.25rem;
+    }
+    .eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+    }
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.15;
+      margin: 0 0 0.6rem;
+    }
+    .lead {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 38rem;
+      margin: 0;
+    }
+    .lang {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+    .lang a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .section-title {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.35rem;
+      margin: 2rem 0 0.85rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 640px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      box-shadow: 0 1px 0 rgba(20, 33, 43, 0.04);
+    }
+    article h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.25rem;
+      margin: 0;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ok);
+      background: #dcfce7;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      width: fit-content;
+    }
+    article p {
+      margin: 0;
+      color: var(--ink);
+      flex: 1;
+    }
+    .actions {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 0.35rem;
+    }
+    a.btn {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.55rem 0.95rem;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+    }
+    a.btn.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--line);
+    }
+    .handbook {
+      margin-top: 2rem;
+      padding: 1.35rem 1.4rem;
+      border: 1px dashed #94a3b8;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.55);
+    }
+    .handbook h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.2rem;
+      margin: 0 0 0.4rem;
+    }
+    .handbook p { margin: 0 0 0.85rem; color: var(--muted); }
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow" id="eyebrow">Demo portfolio</p>
+      <h1 id="title">Dixhitalizim — demot në një vend</h1>
+      <p class="lead" id="lead">
+        Hap këtë faqe në takim. Çdo kartelë është një demo live (të dhëna fiktive).
+        Shtohet lehtë çdo ide e re.
+      </p>
+      <div class="lang">
+        <a href="#" id="to-sq" aria-current="true">Shqip</a>
+        <a href="#" id="to-en">English</a>
+      </div>
+    </header>
+
+    <h2 class="section-title" id="demos-heading">Demot</h2>
+    <div class="grid" id="grid">
+      <!-- filled by JS for i18n -->
+    </div>
+
+    <section class="handbook" aria-labelledby="hb-title">
+      <h2 id="hb-title">Udhëzuesi / Handbook</h2>
+      <p id="hb-text">
+        Libër i vogël: nga idea te live — biznes, tender, teknikë, DevOps, mirëmbajtje. EN + SQ.
+      </p>
+      <div class="actions">
+        <a class="btn" href="https://github.com/lumiiartan/digitalization-handbook/blob/main/sq/NGA-IDEA-TE-LIVE.md" id="hb-sq">Lexo shqip</a>
+        <a class="btn secondary" href="https://github.com/lumiiartan/digitalization-handbook/blob/main/en/FROM-IDEA-TO-LIVE.md" id="hb-en">Read in English</a>
+        <a class="btn secondary" href="https://github.com/lumiiartan/digitalization-handbook">Repo</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <span id="footer-by">Artan Lumi</span> ·
+        <a href="https://github.com/lumiiartan">github.com/lumiiartan</a> ·
+        <span id="footer-note">Për të shtuar një demo: hap README të këtij repo.</span>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    const demos = [
+      {
+        id: "bursat",
+        badge: { sq: "Demo live", en: "Live demo" },
+        title: { sq: "Bursat Suharekë", en: "Suharekë Scholarships" },
+        meta: { sq: "Komuna · aplikim bursash", en: "Municipality · scholarship applications" },
+        blurb: {
+          sq: "Aplikim online, rangim, lista publike, ankesa — të dhëna fiktive për prezantim.",
+          en: "Online apply, ranking, public list, complaints — fictional data for demos."
+        },
+        live: "https://lumiiartan.github.io/bursat-suhareke/",
+        repo: "https://github.com/lumiiartan/bursat-suhareke"
+      },
+      {
+        id: "praktika",
+        badge: { sq: "Demo live", en: "Live demo" },
+        title: { sq: "Praktika — IAAP Skënder Luarasi", en: "Internships — IAAP Skënder Luarasi" },
+        meta: { sq: "Shkollë · praktikë profesionale", en: "School · professional practice" },
+        blurb: {
+          sq: "Vendosje nxënës–biznes, ditari, vlerësim, raporte — 5 role (drejtor, koordinator, mentorë, nxënës).",
+          en: "Student–business placement, logbook, evaluation, reports — 5 roles."
+        },
+        live: "https://lumiiartan.github.io/praktika-iaap/",
+        repo: "https://github.com/lumiiartan/praktika-iaap"
+      }
+    ];
+
+    const copy = {
+      sq: {
+        eyebrow: "Portfolio e demove",
+        title: "Dixhitalizim — demot në një vend",
+        lead: "Hap këtë faqe në takim. Çdo kartelë është një demo live (të dhëna fiktive). Shtohet lehtë çdo ide e re.",
+        demos: "Demot",
+        open: "Hape demon",
+        code: "Kodi",
+        hbTitle: "Udhëzuesi / Handbook",
+        hbText: "Libër i vogël: nga idea te live — biznes, tender, teknikë, DevOps, mirëmbajtje. EN + SQ.",
+        footerNote: "Për të shtuar një demo: hap README të këtij repo."
+      },
+      en: {
+        eyebrow: "Demo portfolio",
+        title: "Digitalization — all demos in one place",
+        lead: "Open this page in a meeting. Each card is a live demo (fictional data). Easy to add the next idea.",
+        demos: "Demos",
+        open: "Open demo",
+        code: "Code",
+        hbTitle: "Handbook",
+        hbText: "A short book: from idea to live — business, tenders, tech, DevOps, maintenance. EN + SQ.",
+        footerNote: "To add a demo: see this repo’s README."
+      }
+    };
+
+    let lang = localStorage.getItem("demo-hub-lang") || "sq";
+
+    function render() {
+      const t = copy[lang];
+      document.documentElement.lang = lang;
+      document.getElementById("eyebrow").textContent = t.eyebrow;
+      document.getElementById("title").textContent = t.title;
+      document.getElementById("lead").textContent = t.lead;
+      document.getElementById("demos-heading").textContent = t.demos;
+      document.getElementById("hb-title").textContent = t.hbTitle;
+      document.getElementById("hb-text").textContent = t.hbText;
+      document.getElementById("footer-note").textContent = t.footerNote;
+      document.getElementById("to-sq").setAttribute("aria-current", lang === "sq" ? "true" : "false");
+      document.getElementById("to-en").setAttribute("aria-current", lang === "en" ? "true" : "false");
+
+      const grid = document.getElementById("grid");
+      grid.innerHTML = demos.map((d) => `
+        <article>
+          <span class="badge">${d.badge[lang]}</span>
+          <h2>${d.title[lang]}</h2>
+          <p class="meta">${d.meta[lang]}</p>
+          <p>${d.blurb[lang]}</p>
+          <div class="actions">
+            <a class="btn" href="${d.live}" target="_blank" rel="noopener">${t.open}</a>
+            <a class="btn secondary" href="${d.repo}" target="_blank" rel="noopener">${t.code}</a>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    document.getElementById("to-sq").addEventListener("click", (e) => {
+      e.preventDefault();
+      lang = "sq";
+      localStorage.setItem("demo-hub-lang", lang);
+      render();
+    });
+    document.getElementById("to-en").addEventListener("click", (e) => {
+      e.preventDefault();
+      lang = "en";
+      localStorage.setItem("demo-hub-lang", lang);
+      render();
+    });
+    render();
+  </script>
+</body>
+</html>
