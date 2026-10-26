@@ -9,6 +9,7 @@ One page that lists all digitalization demos. Open this in client meetings.
 | Demo | Live | Repo |
 |------|------|------|
 | Bursat Suharekë | https://lumiiartan.github.io/bursat-suhareke/ | [bursat-suhareke](https://github.com/lumiiartan/bursat-suhareke) |
+| Bursat Online – Ferizaj (DKA) | https://lumiiartan.github.io/bursat-ferizaj/ | [bursat-ferizaj](https://github.com/lumiiartan/bursat-ferizaj) |
 | Praktika IAAP | https://lumiiartan.github.io/praktika-iaap/ | [praktika-iaap](https://github.com/lumiiartan/praktika-iaap) |
 
 ## Handbook
